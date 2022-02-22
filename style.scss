@@ -60,19 +60,19 @@ body{
     height: 70px;
     background-color: transparent;
     &__rock{
-      background-image: url("/interface/rock.png");
+      background-image: url("interface/rock.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 70%;
     }
     &__scissors{
-      background-image: url("/interface/scissors.png");
+      background-image: url("interface/scissors.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 70%;
     }
     &__paper{
-      background-image: url("/interface/paper.png");
+      background-image: url("interface/paper.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 70%;
