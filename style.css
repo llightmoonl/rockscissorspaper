@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.game__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-around;
+}
+.game__players {
+  text-align: center;
+}
+.game__counter {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+.game__container {
+  display: flex;
+}
+.game__element {
+  max-width: 300px;
+  width: 100%;
+}
+.game__computer {
+  animation: handComputer 1s infinite;
+}
+.game__computer .game__element {
+  transform: scale(-1, 1);
+}
+.game__player {
+  display: flex;
+  animation: handPlayer 1s infinite;
+}
+.game__control {
+  display: flex;
+}
+.game__button {
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-right: 20px;
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+}
+.game__button__rock {
+  background-image: url("/interface/rock.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+.game__button__scissors {
+  background-image: url("/interface/scissors.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+.game__button__paper {
+  background-image: url("/interface/paper.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+.game__button:last-child {
+  margin-right: 0;
+}
+.game__button[disabled] {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.1);
+  cursor: default;
+  filter: grayscale(1);
+}
+.game__picture {
+  z-index: 0;
+  width: 50px;
+}
+.game__refresh {
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 50px;
+  padding: 10px 50px;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: "Open Sans", sans-serif;
+}
+.game__refresh[disabled] {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.1);
+  cursor: default;
+}
+.game__new {
+  margin-top: 10px;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 50px;
+  padding: 10px 50px;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: "Open Sans", sans-serif;
+}
+.game__menu {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes handPlayer {
+  0% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+@keyframes handComputer {
+  0% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+.counter__player:before {
+  content: "-";
+}
+
+/*# sourceMappingURL=style.css.map */
