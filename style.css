@@ -59,19 +59,19 @@ body {
   background-color: transparent;
 }
 .game__button__rock {
-  background-image: url("/interface/rock.png");
+  background-image: url("interface/rock.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
 }
 .game__button__scissors {
-  background-image: url("/interface/scissors.png");
+  background-image: url("interface/scissors.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
 }
 .game__button__paper {
-  background-image: url("/interface/paper.png");
+  background-image: url("interface/paper.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
